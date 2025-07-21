@@ -44,6 +44,14 @@
 body{
     font-family: "Poppins", sans-serif;
 }
+
+main{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+main section{
+    margin-top: 100px;
+}
 /* nav related styles */
 
 nav{
@@ -113,7 +121,74 @@ nav ul li a{
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* companies section related styles */
+.companies{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 3.8rem;
+}
+/* collection section related styles */
+.collection{
+     text-align: center;
+     position: relative;
+}
 
+.collection-section-title{
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: var(--text-color1);
+}
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.87rem;
+    margin-top: 1.82rem;
+    margin-bottom: 3.12rem;
+}
+.collection-item{
+    font-family: "Inter", sans-serif;
+     text-align: left; 
+    border-radius: 5px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    padding: 14px 17px;
+    background-color: white;
+}
+.collection-item img{
+    width: 100%;
+    border-radius: 5px;
+}
+.collection-item-name{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.75rem;
+    color: #18191F;
+    padding-top: 10px;
+    
+}
+
+.item-price{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.87);
+    padding: 10px 0;
+}
+.item-rating{
+    padding: 10px 0;
+    color: #FB8200;
+}
+.item-desc, .rating-value{
+    color: var(--text-color1);
+}
+.item-desc{
+    padding-bottom: 20px;
+}
+
+.collection-btn{
+    position: absolute;
+    right: 0;
+    background-color: white;
+    color: #E02C6D;
+}
+/* responsive for smaller device */
 @media screen and (max-width: 576px) {
     nav,
     nav ul
@@ -135,7 +210,7 @@ nav ul li a{
         text-align: center;
      }
      .banner-desc{
-        padding: 0;
+        padding: 0 10px 0 10px;
      }
      .banner-img{
         margin: 40px;
