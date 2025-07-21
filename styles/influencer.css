@@ -154,7 +154,7 @@ nav ul li a{
     background-color: white;
 }
 .collection-item img{
-    width: 100%;
+    max-width: 100%;
     border-radius: 5px;
 }
 .collection-item-name{
@@ -188,6 +188,29 @@ nav ul li a{
     background-color: white;
     color: #E02C6D;
 }
+/* featured section  related styles*/
+.featured-products{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.featured-text{
+    max-width: 610px;
+
+}
+.featured-title{
+    font-weight: 700;
+    font-size: 2.37rem;
+    columns: #0A0826;
+}
+.featured-desc{
+    padding: 16px 100px 16px 0;
+    color: #6C6C6C;
+    font-weight: 700;
+}
+.featured-button{
+    font-weight: 700;
+}
 /* responsive for smaller device */
 @media screen and (max-width: 576px) {
     nav,
@@ -195,14 +218,13 @@ nav ul li a{
     {
         flex-direction: column;
     }
-    nav{
+    nav,nav ul{
         margin: 20px auto;
-    }
-    nav ul{
-        margin-top: 10px;
+        text-align: center;
     }
     nav ul li{
         padding: 3px;
+        text-align: left;
     }
      .banner{
         flex-direction: column-reverse;
@@ -216,6 +238,35 @@ nav ul li a{
         margin: 40px;
      }
     .banner-img img{
-        width: 100%;
+       max-width: 100%;
     }
+    .btn-primary{
+        font-size: 1.25rem;
+    }
+    main > section{
+        margin-top: 80px;
+    }
+    .companies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+    .collection-container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        grid-gap: 20px;
+        margin-bottom: 1.5rem;
+    }
+    .collection-item{
+        max-width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+    .collection-item img{
+    width: 100%;
+    border-radius: 5px;
+}
 }
